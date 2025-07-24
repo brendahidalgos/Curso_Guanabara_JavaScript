@@ -6,6 +6,23 @@
     <title>Aula 5 de JavaScript</title>
 </head>
 <body>
-    
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){ /*função*/
+            var txtv = window.document.querySelector('input#txtvel') /*valor do input*/
+            var res = window.document.querySelector('div#res')/*div com resultado*/
+            var vel = Number(txtv.value) /*conversao para numero*/
+            res.innerHTML = `<p>Sua velocidade atual é de ${vel}km/h</p>` /*resposta*/
+            if(vel> 60){ /*se a velocidade for maior que 60*/
+                res.innerHTML += `<p>Você esta <STRONG>MULTADO</STRONG> por excesso de velocidade!</p>` /*exibe a mensagem*/
+            }
+            res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>` /*mensagem final*/
+        }
+    </script>
 </body>
 </html>
