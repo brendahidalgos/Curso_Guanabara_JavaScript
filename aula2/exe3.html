@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 JavaScript</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?') /*armazenando nome*/
+        document.writeln(`Olá, ${nome}! Seu nome tem ${nome.length} letras <br>`)/*exibindo nome*/
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`) /*letras em maiúsculas*/
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()}<br>`) /*letras em minúsculas*/
+
+        /*MODIFICANDO NÚMEROS
+        var n1 = 1234.5
+        n1.toFixed(2) /*com 2 casas decimais)
+        n1.tofized(2).replace('.',',') /*trocando ponto por virgula  
+        ni.toLocaleString('pt-BR, {style; 'currency', currency: 'BRL'}') /*transformando em valor dinheiro real
+        */
+    </script>
+</body>
+</html>
