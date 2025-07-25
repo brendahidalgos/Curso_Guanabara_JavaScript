@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dia da Semana</title>
+</head>
+<body>
+    <h2>Qual o dia da semana hoje?</h2>
+    <div id="resultado" style="font-size: 20px; margin-top: 10px;"></div>
+
+    <script>
+        var agora = new Date();
+        var diaSem = agora.getDay();
+        var resultado = document.getElementById("resultado");
+
+        switch(diaSem){
+            case 0:
+                resultado.innerHTML = "Hoje é Domingo.";
+                break;
+            case 1:
+                resultado.innerHTML = "Hoje é Segunda-feira.";
+                break;
+            case 2:
+                resultado.innerHTML = "Hoje é Terça-feira.";
+                break;
+            case 3:
+                resultado.innerHTML = "Hoje é Quarta-feira.";
+                break;
+            case 4:
+                resultado.innerHTML = "Hoje é Quinta-feira.";
+                break;
+            case 5:
+                resultado.innerHTML = "Hoje é Sexta-feira.";
+                break;
+            case 6:
+                resultado.innerHTML = "Hoje é Sábado.";
+                break;
+            default:
+                resultado.innerHTML = "Erro: dia inválido.";
+                break;
+        }
+    </script>
+</body>
+</html>

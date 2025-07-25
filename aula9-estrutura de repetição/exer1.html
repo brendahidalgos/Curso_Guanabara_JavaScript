@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador While</title>
+</head>
+<body>
+    <h2>Contador usando while</h2>
+    <div id="saida"></div>
+
+    <script>
+        var c = 1; // contador começando em 1
+        var saida = document.getElementById('saida');
+        while (c <= 6) { // enquanto contador menor ou igual a 6
+            saida.innerHTML += `Passo ${c}<br>`; // adiciona texto à div
+            c++; // incrementa contador
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Saudação pelo Horário</title>
+</head>
+<body>
+    <h2>Saudação de Acordo com a Hora</h2>
+    <div id="mensagem" style="margin-top: 20px;"></div>
+
+    <script>
+        var agora = new Date();
+        var hora = agora.getHours();
+        var msg = document.getElementById("mensagem");
+
+        msg.innerHTML = `Agora são exatamente ${hora} horas.<br>`;
+
+        if (hora < 12) {
+            msg.innerHTML += "Bom dia!";
+        } else if (hora <= 18) {
+            msg.innerHTML += "Boa tarde!";
+        } else {
+            msg.innerHTML += "Boa noite!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo do...while</title>
+</head>
+<body>
+    <h2>Contador com do...while</h2>
+    <div id="saida"></div>
+
+    <script>
+        var c = 1;
+        var saida = document.getElementById('saida');
+        do {
+            saida.innerHTML += `Passo ${c}<br>`;
+            c++;
+        } while (c <= 6);
+    </script>
+</body>
+</html>
